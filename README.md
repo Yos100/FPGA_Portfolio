@@ -55,7 +55,7 @@ FPGA_Portfolio/
 ## ⚡ How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/FPGA_Portfolio.git
+   git clone https://github.com/Yos100/FPGA_Portfolio.git
    cd FPGA_Portfolio
 Open project in Vivado or ModelSim.
 
