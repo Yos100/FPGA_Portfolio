@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 21 09:00:01 2024
+# Process ID: 3727
+# Current directory: /nfs/home/y/y_assefa/COEN316/LABS/LAB4
+# Command line: vivado
+# Log file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.log
+# Journal file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1

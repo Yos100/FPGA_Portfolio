@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 13 17:06:58 2024
+# Process ID: 29674
+# Current directory: /nfs/home/y/y_assefa/COEN316/LABS/LAB4
+# Command line: vivado
+# Log file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.log
+# Journal file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab4-p1p2 /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2 -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/nfs/home/y/y_assefa/COEN316/LABS/LAB4/pc_register.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/instruction_cache.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/data_cache.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw

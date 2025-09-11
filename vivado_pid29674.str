@@ -1,0 +1,501 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 29674
+License: Customer
+
+Current time: 	Wed Nov 13 17:08:09 EST 2024
+Time zone: 	Eastern Standard Time (America/Montreal)
+
+OS: Scientific Linux release 7.9 (Nitrogen)
+OS Version: 3.10.0-1160.118.1.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 18 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	y_assefa
+User home directory: /nfs/home/y/y_assefa
+User working directory: /nfs/home/y/y_assefa/COEN316/LABS/LAB4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado
+HDI_APPROOT: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2
+RDI_DATADIR: /nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data
+RDI_BINDIR: /nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/y/y_assefa/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/y/y_assefa/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /nfs/home/y/y_assefa/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/nfs/sw_cmc/x86_64.EL7/tools/xilinx/Vivado_2018.2/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.log
+Vivado journal file location: 	/nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-29674-brown.encs.concordia.ca
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 6088@license-cadpass.encs.concordia.ca:16088@license-cadpass.encs.concordia.ca
+XILINX_DSP: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2
+XILINX_SDK: /CMC/tools/xilinx/Vivado_2018.2/SDK/2018.2
+XILINX_VIVADO: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2
+XILINX_VIVADO_HLS: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2
+
+
+GUI allocated memory:	151 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 5,024 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 43 MB (+42113kb) [00:00:08]
+// [Engine Memory]: 5,002 MB (+5093538kb) [00:00:08]
+// Tcl Message: start_gui 
+// [GUI Memory]: 79 MB (+35972kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,024 MB. GUI used memory: 36 MB. Current time: 11/13/24 5:08:11 PM EST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // x (w, ck)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (ck): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,066 MB. GUI used memory: 39 MB. Current time: 11/13/24 5:08:31 PM EST
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 13 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "lab4-p1p2", true); // X (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,093 MB. GUI used memory: 42 MB. Current time: 11/13/24 5:08:51 PM EST
+// Elapsed time: 26 seconds
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/pc_register.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/instruction_cache.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+// Elapsed time: 11 seconds
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+// [GUI Memory]: 87 MB (+4349kb) [00:01:52]
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+// [GUI Memory]: 95 MB (+3873kb) [00:02:02]
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/data_cache.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd");
+// [GUI Memory]: 106 MB (+6569kb) [00:02:12]
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, f)
+// Elapsed time: 11 seconds
+dismissFileChooser();
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (C, f)
+setFileChooser("/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// [GUI Memory]: 113 MB (+1843kb) [00:02:57]
+// Elapsed time: 38 seconds
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 276, "xc7a100tcsg324-1", 0); // v (O, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 276, "xc7a100tcsg324-1", 0, false, false, false, false, true); // v (O, f) - Double Click
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bx (f):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project lab4-p1p2 /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2 -part xc7a100tcsg324-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 125 MB (+6625kb) [00:03:25]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6296.543 ; gain = 19.742 ; free physical = 5725 ; free virtual = 18360 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property simulator_language VHDL [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/nfs/home/y/y_assefa/COEN316/LABS/LAB4/pc_register.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/instruction_cache.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/data_cache.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc 
+// Elapsed time: 11 seconds
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 178 seconds
+dismissDialog("Create Project"); // bx (f)
+dismissDialog("New Project"); // f (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,127 MB. GUI used memory: 42 MB. Current time: 11/13/24 5:11:26 PM EST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd), u_datapath : datapath(Behavioral) (full_datapath.vhd)]", 3); // B (D, ck)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd), u_datapath : datapath(Behavioral) (full_datapath.vhd)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd), u_datapath : datapath(Behavioral) (full_datapath.vhd)]", 3); // B (D, ck)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 3 
+// Tcl Message: [Wed Nov 13 17:12:43 2024] Launched synth_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 280ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "11 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'reg_write' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:91]. ]", 1, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'reg_write' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:91]. ]", 1, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd;-;;-;16;-;line;-;91;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 98 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'reg_write' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:91]. ]", 1); // ah (O, ck)
+// Elapsed time: 30 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'reg_write' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:91]. ]", 1, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+typeControlKey(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 'a'); // ah (O, ck)
+selectCodeEditor("cpu.vhd", 152, 466); // ce (w, ck)
+selectCodeEditor("cpu.vhd", 479, 273); // ce (w, ck)
+typeControlKey((HResource) null, "cpu.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("cpu.vhd", 461, 265); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,214 MB. GUI used memory: 44 MB. Current time: 11/13/24 5:19:26 PM EST
+// Elapsed time: 226 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,230 MB. GUI used memory: 44 MB. Current time: 11/13/24 5:19:56 PM EST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 3 
+// Tcl Message: [Wed Nov 13 17:20:02 2024] Launched synth_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'rs_out' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]. ]", 1); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'rs_out' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]. ]", 1, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd;-;;-;16;-;line;-;104;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 85 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'rs_out' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]. , [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'rt_out' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]. ]", 2, false); // ah (O, ck)
+typeControlKey(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 'a'); // ah (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 92 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd), u_datapath : datapath(Behavioral) (full_datapath.vhd)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cpu(behavioral) (cpu.vhd), u_datapath : datapath(Behavioral) (full_datapath.vhd)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("full_datapath.vhd", 150, 381); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 214, 378); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 39, 389); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 166, 323); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 373, 388); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 373, 388, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("full_datapath.vhd", 183, 384); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 5,264 MB (+12884kb) [00:16:56]
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,264 MB. GUI used memory: 45 MB. Current time: 11/13/24 5:24:56 PM EST
+// Elapsed time: 84 seconds
+selectCodeEditor("full_datapath.vhd", 411, 142); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 59, 146, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, ck)
+selectCodeEditor("full_datapath.vhd", 131, 290); // ce (w, ck)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ck)
+selectCodeEditor("full_datapath.vhd", 135, 189); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 556, 129); // ce (w, ck)
+typeControlKey((HResource) null, "full_datapath.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 367, 185); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("full_datapath.vhd", 160, 353); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 95, 354); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("full_datapath.vhd", 92, 402); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 50, 404); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 9, 402); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 77, 129); // ce (w, ck)
+selectCodeEditor("full_datapath.vhd", 410, 155); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,296 MB. GUI used memory: 45 MB. Current time: 11/13/24 5:26:26 PM EST
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 3 
+// Tcl Message: [Wed Nov 13 17:26:32 2024] Launched synth_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectCodeEditor("cpu.vhd", 80, 220); // ce (w, ck)
+selectCodeEditor("cpu.vhd", 84, 220); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("cpu.vhd", 135, 218); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("cpu.vhd", 192, 218); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,328 MB. GUI used memory: 45 MB. Current time: 11/13/24 5:28:06 PM EST
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectCodeEditor("cpu.vhd", 318, 287); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectCodeEditor("cpu.vhd", 148, 225); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+// Elapsed time: 27 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3493] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:8' does not have matching formal port for component port 'pc_out' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd;-;;-;16;-;line;-;104;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,360 MB. GUI used memory: 45 MB. Current time: 11/13/24 5:31:36 PM EST
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "full_datapath.vhd", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 72 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 3 
+// Tcl Message: [Wed Nov 13 17:33:08 2024] Launched synth_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 396ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 3 
+// Tcl Message: [Wed Nov 13 17:34:07 2024] Launched impl_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 77 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 3 
+// Tcl Message: [Wed Nov 13 17:35:28 2024] Launched impl_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "3 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 40 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 20, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 19, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 19, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 20, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, ck)
+// Elapsed time: 153 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 19, false); // ah (O, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,395 MB. GUI used memory: 50 MB. Current time: 11/13/24 5:49:06 PM EST
+// Elapsed time: 563 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.vhd", 1); // k (j, ck)
+selectCodeEditor("cpu.vhd", 127, 246); // ce (w, ck)
+selectCodeEditor("cpu.vhd", 91, 90); // ce (w, ck)
+selectCodeEditor("cpu.vhd", 91, 150); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("cpu.vhd", 357, 409); // ce (w, ck)
+typeControlKey((HResource) null, "cpu.vhd", 'v'); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 11 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 3 
+// Tcl Message: [Wed Nov 13 17:49:58 2024] Launched synth_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/runme.log [Wed Nov 13 17:49:58 2024] Launched impl_1... Run output will be captured here: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 38 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,445 MB. GUI used memory: 56 MB. Current time: 11/13/24 5:52:01 PM EST
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,445 MB. GUI used memory: 52 MB. Current time: 11/13/24 6:22:01 PM EST

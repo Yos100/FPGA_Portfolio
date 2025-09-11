@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 21 08:33:22 2024
+# Process ID: 14444
+# Current directory: /nfs/home/y/y_assefa/COEN316/LABS/LAB4
+# Command line: vivado
+# Log file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.log
+# Journal file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 6372.977 ; gain = 193.668 ; free physical = 9719 ; free virtual = 21548
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 08:40:52 2024...

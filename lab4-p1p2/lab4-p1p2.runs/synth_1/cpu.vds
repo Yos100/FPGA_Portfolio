@@ -1,0 +1,738 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 21 11:34:08 2024
+# Process ID: 24192
+# Current directory: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1
+# Command line: vivado -log cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu.tcl
+# Log file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/cpu.vds
+# Journal file: /nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source cpu.tcl -notrace
+Command: synth_design -top cpu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24590 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1401.578 ; gain = 85.805 ; free physical = 9492 ; free virtual = 21596
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cpu' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:20]
+INFO: [Synth 8-3491] module 'control_unit' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd:5' bound to instance 'u_control_unit' of component 'control_unit' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'I_Cache' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/instruction_cache.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'I_Cache' (1#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/instruction_cache.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/control_unit.vhd:21]
+INFO: [Synth 8-3491] module 'datapath' declared at '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:7' bound to instance 'u_datapath' of component 'datapath' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'regfile' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd:20]
+WARNING: [Synth 8-614] signal 'registers' is read in the process but is not in the sensitivity list [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (3#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab2_register.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'Sign_Extend' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd:14]
+INFO: [Synth 8-226] default block is never used [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Sign_Extend' (4#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/sign_extension.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'alu' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd:18]
+INFO: [Synth 8-226] default block is never used [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd:37]
+INFO: [Synth 8-226] default block is never used [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Data_Cache' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/data_cache.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Data_Cache' (6#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/data_cache.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'next_address_entity' [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd:18]
+WARNING: [Synth 8-614] signal 'rs' is read in the process but is not in the sensitivity list [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'next_address_entity' (7#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab3_next_address.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (8#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/full_datapath.vhd:32]
+WARNING: [Synth 8-3848] Net alu_func in module/entity cpu does not have driver. [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:37]
+WARNING: [Synth 8-3848] Net sign_ext_ctrl in module/entity cpu does not have driver. [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (9#1) [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:20]
+WARNING: [Synth 8-3331] design datapath has unconnected port reg_dst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1447.219 ; gain = 131.445 ; free physical = 9346 ; free virtual = 21457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_datapath:alu_func[1] to constant 0 [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]
+WARNING: [Synth 8-3295] tying undriven pin u_datapath:alu_func[0] to constant 0 [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]
+WARNING: [Synth 8-3295] tying undriven pin u_datapath:sign_ext_ctrl[1] to constant 0 [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]
+WARNING: [Synth 8-3295] tying undriven pin u_datapath:sign_ext_ctrl[0] to constant 0 [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/cpu.vhd:104]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1447.219 ; gain = 131.445 ; free physical = 9410 ; free virtual = 21521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1447.219 ; gain = 131.445 ; free physical = 9410 ; free virtual = 21521
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc]
+Finished Parsing XDC File [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1842.973 ; gain = 0.000 ; free physical = 8857 ; free virtual = 21042
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 9052 ; free virtual = 21240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 9052 ; free virtual = 21240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 9054 ; free virtual = 21242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "reg_in_src" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "alu_src" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "add_sub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "logic_func" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pc_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab1_alu.vhd:27]
+INFO: [Synth 8-5546] ROM "data_mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_mem_reg[31]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:40 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 9043 ; free virtual = 21233
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 65    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 65    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module I_Cache 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 6     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Sign_Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Data_Cache 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module next_address_entity 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design datapath has unconnected port reg_dst
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[15][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[15][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[12][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[12][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[8][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[6][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[6][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[4][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[4][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][0] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[2][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[1][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[0][0]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[15][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[15][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[12][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[12][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[8][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[6][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[6][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[4][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[4][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][1] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[2][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[1][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[0][1]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[15][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[15][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[12][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[12][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[8][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[6][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[6][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[4][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[4][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][2] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[2][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[1][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[0][2]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[15][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[15][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[12][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[12][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[8][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[6][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[6][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[4][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[4][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][3] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[2][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[1][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[0][3]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[15][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[15][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[12][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[12][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[8][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[8][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[6][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[6][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[4][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[4][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][4] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[2][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[2][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[1][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[0][4]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[31][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[31][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[30][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[30][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[29][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[29][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[28][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[28][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[27][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[27][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[26][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[26][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][5] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[23][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[23][31]'
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[22][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[22][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][5] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[20][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[20][31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][5] )
+INFO: [Synth 8-3886] merging instance 'u_datapath/regfile_inst/registers_reg[16][5]' (FDCE) to 'u_datapath/regfile_inst/registers_reg[16][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[21][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[19][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[18][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[17][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[9][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[7][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[25][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_datapath/regfile_inst/registers_reg[24][7] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[0][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[1][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[2][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[3][0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[4][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][1]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[5][0]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[6][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][31]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][30]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][29]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][28]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][27]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][26]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][25]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][24]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][23]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][22]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][21]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][20]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][19]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][18]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][17]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][16]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][15]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][14]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][13]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][12]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][11]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][10]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][9]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][8]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][7]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][6]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][5]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][4]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][3]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][2]) is unused and will be removed from module cpu.
+WARNING: [Synth 8-3332] Sequential element (u_datapath/regfile_inst/registers_reg[7][1]) is unused and will be removed from module cpu.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:41 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 9032 ; free virtual = 21226
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:51 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8563 ; free virtual = 20779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:51 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8563 ; free virtual = 20779
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:51 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8563 ; free virtual = 20778
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8578 ; free virtual = 20793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8578 ; free virtual = 20793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8578 ; free virtual = 20793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8578 ; free virtual = 20793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8578 ; free virtual = 20793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8581 ; free virtual = 20796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT4   |     2|
+|4     |LUT5   |    43|
+|5     |FDCE   |     5|
+|6     |IBUF   |     2|
+|7     |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+---------+------+
+|      |Instance         |Module   |Cells |
++------+-----------------+---------+------+
+|1     |top              |         |    79|
+|2     |  u_datapath     |datapath |    62|
+|3     |    alu_inst     |alu      |    48|
+|4     |    i_cache_inst |I_Cache  |     7|
++------+-----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8582 ; free virtual = 20797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1518 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1842.973 ; gain = 131.445 ; free physical = 8649 ; free virtual = 20864
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:52 . Memory (MB): peak = 1842.973 ; gain = 527.199 ; free physical = 8659 ; free virtual = 20874
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+312 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1842.977 ; gain = 539.852 ; free physical = 8647 ; free virtual = 20863
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/nfs/home/y/y_assefa/COEN316/LABS/LAB4/lab4-p1p2/lab4-p1p2.runs/synth_1/cpu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_utilization_synth.rpt -pb cpu_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1866.996 ; gain = 0.000 ; free physical = 8644 ; free virtual = 20860
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 11:35:17 2024...
