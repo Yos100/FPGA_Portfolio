@@ -27,23 +27,6 @@ The project demonstrates a working datapath and control unit architecture, suppo
 
 ---
 
-## 📂 Repository Structure
-FPGA_Portfolio/
-│── src/ # VHDL source files
-│ ├── PC_Register.vhd
-│ ├── I_Cache.vhd
-│ ├── regfile.vhd
-│ ├── Sign_Extend.vhd
-│ ├── Data_Cache.vhd
-│ ├── datapath.vhd
-│ ├── control_unit.vhd
-│ └── cpu.vhd
-│── sim/ # Testbenches and simulation files
-│── README.md # Project documentation (this file)
-
-
----
-
 ## 📖 Supported Instructions
 - **R-type:** `add`, `sub`, `slt`, `jr`  
 - **I-type:** `addi`, `andi`, `lw`, `sw`  
@@ -80,6 +63,7 @@ Designed and integrated a full CPU datapath and control unit.
 Learned hardware-software co-design using VHDL and FPGA.
 
 Improved skills in simulation, debugging, and hardware synthesis.
+
 
 👤 Author
 Yoseph Assefa
