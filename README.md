@@ -64,6 +64,10 @@ Learned hardware-software co-design using VHDL and FPGA.
 
 Improved skills in simulation, debugging, and hardware synthesis.
 
+## 📜 License
+This project is for **educational and portfolio purposes only**.  
+The code may **not be used for commercial purposes**, including selling, licensing, or distributing for profit.
+
 
 👤 Author
 Yoseph Assefa
