@@ -41,8 +41,6 @@ FPGA_Portfolio/
 │── sim/ # Testbenches and simulation files
 │── README.md # Project documentation (this file)
 
-markdown
-Copy code
 
 ---
 
@@ -85,7 +83,3 @@ Improved skills in simulation, debugging, and hardware synthesis.
 
 👤 Author
 Yoseph Assefa
-
-
-📧 yosephsamuel10@gmail.com
-
