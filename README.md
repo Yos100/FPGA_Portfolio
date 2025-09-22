@@ -49,6 +49,7 @@ Run testbenches from the sim/ folder to verify functionality.
 (Optional) Synthesize and implement on Nexys A7 FPGA.
 
 📊 Example Simulation
+
 Load immediate values into registers.
 
 Perform arithmetic operations (add, sub).
